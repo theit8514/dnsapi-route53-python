@@ -9,15 +9,15 @@ The library currently depends on:
 # Installation
 1. Install python and pip
   * For Debian/Ubuntu based systems:
-```shell
-apt-get install python pip
-```
+  ```shell
+  apt-get install python pip
+  ```
 2. Install AWSCLI
-```shell
-pip install awscli
-```
+  ```shell
+  pip install awscli
+  ```
 3. Install [le.sh](https://github.com/Neilpang/le).
-3. Run `make install` in this folder to install the library to le.sh's dnsapi folder.
+4. Run `make install` in this folder to install the library to le.sh's dnsapi folder.
 
 # Usage
 To begin, configure AWSCLI with a new profile with the proper permissions to manage the domains you would like to use for Let's Encrypt.
