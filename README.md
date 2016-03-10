@@ -27,7 +27,7 @@ To begin, configure AWSCLI with a new profile with the proper permissions to man
 2. Enter the access key and secret key of a user that has a Route53 policy. For an example policy, see [this IAM policy](../blob/master/route53-policy.iam).
 3. Edit the dns-route53-python.conf file located at `$HOME/.le/dnsapi/` and set the AWS53_PROFILE to 'route53'.
 
-Now use the le.sh command to register a new certificate with the `dns-route53-python` command. For example, to register test.example.com:
+Now use the le.sh command to register a new certificate with the `dns-route53-python` type. For example, to register test.example.com:
 ```shell
-le.sh dns-route53-python test.example.com
+le.sh issue dns-route53-python test.example.com
 ```
