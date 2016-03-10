@@ -12,7 +12,8 @@ The library currently depends on:
   ```shell
   apt-get install python pip
   ```
-2. Install AWSCLI
+2. Install AWSCLI:
+
   ```shell
   pip install awscli
   ```
