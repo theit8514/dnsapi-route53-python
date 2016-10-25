@@ -133,7 +133,6 @@ _test_domain() {
   _info "Searching for ZoneID for $basedomain"
   _domain_id=`$AWS --output text $PROFILE route53 list-hosted-zones-by-name --dns-name $basedomain --max-items 1 2>$errfile | grep "HOSTEDZONES" | awk '{ print $3; }' | sed -r 's/\/hostedzone\/([A-Z0-9]+)/\1/'`
   _debug _domain_id $_domain_id
-  declare -p _domain_id
   local errorcount=`wc -l < $errfile`
   return $errorcount
 }
